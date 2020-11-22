@@ -1,0 +1,155 @@
+body{
+    display:block;
+    background:linear-gradient(90deg ,#85a5e0,#6883b4,#34559b,#053388,#0b1c3f);
+    text-align: center;
+}
+h1{
+    color:rgb(4, 4, 8);
+    background:linear-gradient(90deg,#720808,#632222) ;
+}
+h2{
+    background:linear-gradient(90deg,#720808,#632222) ;
+}
+header{
+    text-align: center;
+}
+/*IMAGEN DE PORTADA*/
+#inicioImg{
+   
+    width:100%;
+    height: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../shark-2683184_1920.jpg');
+    background-size:cover;
+    background-position: -30px;
+  
+}
+
+li{
+    margin-top:40px;
+    list-style: none;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #85a5e0;
+}
+a{
+    margin-top:9px;
+    text-decoration: none;
+    color:rgb(190, 119, 119);
+    background-color: #1b325c;
+    padding:2px;
+    padding-top:4px;
+    border-radius:4px;
+    box-shadow:9px 9px 12px 5px #461111 ;
+    background:linear-gradient(90deg,rgb(138, 36, 36),rgb(99, 4, 4));
+ }
+ a:hover{
+    color: rgb(107, 221, 41);
+ } 
+ a:active{
+    font-size: 150%;
+ }
+
+.ordenes:hover{
+    color: rgb(107, 221, 41);
+ }
+ .ordenes:active{
+    font-size: 150%;
+ }
+#listCont{
+margin-top:30px;
+}
+nav{
+margin-left:auto;
+margin-right:auto;
+margin-left: -7%;
+}
+img{
+    max-width: 100%;
+}
+span{
+    font-weight: bolder;
+}
+.volver{
+    margin-top:10px;
+}
+.license_container{
+
+display: block;
+margin-top: 19px;
+}
+.ordenes{
+    height: 40px;
+}
+
+/*MEDIA QUERYS*/
+@media(min-width:336px){
+    #inicioImg{
+        background-position: 0px;
+    }
+}
+
+@media(min-width:606px){
+    h1{
+        height: 70px;
+        font-size: 60px;
+    }
+    h2{
+        height: 40px;
+        font-size: 30px;
+    }
+    h4{
+        font-size: 18px;
+    }
+  li a{
+      font-size: 20px;
+  }
+  a{
+      font-size: 30px;
+  }
+  #inicioImg{
+      background-position-y:-60px ;
+      height: 300px;
+  }
+}
+@media(min-width:879px){
+    h1{
+        height: 70px;
+        font-size: 60px;
+    }
+    h2{
+        height: 60px;
+        font-size: 50px;
+    }
+  li a{
+      font-size: 30px;
+  }
+  a{
+      font-size: 30px;
+  }
+  #inicioImg{
+      background-position-y:-90px ;
+      height: 500px;
+  }
+}
+@media(min-width:1179px){
+    h1{
+        height: 100px;
+        font-size: 80px;
+    }
+    h2{
+        height: 60px;
+        font-size: 50px;
+    }
+  li a{
+      font-size: 40px;
+  }
+  a{
+      font-size: 30px;
+  }
+  #inicioImg{
+      background-position-y:-90px ;
+      height: 900px;
+  }
+}
