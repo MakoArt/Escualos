@@ -1,0 +1,33 @@
+<%-include('templates/head')%> 
+
+<a class="volver" href="/">VOLVER</a> 
+
+<h1>ORDEN</h1>
+
+
+
+
+<%if(arraySqua.length>0){%>
+
+<%arraySqua.forEach(squa=>{%>
+
+<h1><%=squa.nombre%></h1>
+    <h2><%=squa.cientifico%></h2>
+<%if(squa._id=='5fafbef977e622fa77bcb03b'){%>
+    <h4>Derechos de atribución de fotografías</h4>
+     <h4>author-page-licence</h4>
+    <a href="https://www.flickr.com/people/37071060@N06">Philippe Guillaume</a> 
+    <a href="https://es.wikipedia.org/wiki/Squatina_squatina">Wikipedia</a>
+    <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>
+    <%}%>
+
+<img src="<%=squa.imagen%>" alt=""/>
+<p><h3><%=squa.descripcion%></h3></p>
+
+<%})%>
+
+<%}%>
+
+<a class="volver" href="/">VOLVER</a> 
+
+<%- include('templates/footer') %>

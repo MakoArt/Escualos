@@ -1,0 +1,28 @@
+<%-include('templates/head')%> 
+
+<a class="volver" href="/">VOLVER</a> 
+
+<h1>ORDEN</h1>
+<h3>HETERODONTIFORMES</h3>
+
+
+
+<%if(arrayHetero.length>0){%>
+
+<%arrayHetero.forEach(hetero=>{%>
+
+<h1><%=hetero.nombre%></h1>
+<h2><%=hetero.cientifico%></h2>
+<a href="https://www.flickr.com/people/26216388@N02">Ed Bierman</a>
+<a href="https://es.wikipedia.org/wiki/Heterodontus_francisci">Wikipedia</a>
+<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>
+<img src="<%=hetero.imagen%>" alt=""/>
+<p><h3><%=hetero.descripcion%></h3></p>
+
+<%})%>
+
+<%}%>
+<a class="volver" href="/">VOLVER</a> 
+
+
+<%- include('templates/footer') %>

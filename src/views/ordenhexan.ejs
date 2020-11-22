@@ -1,0 +1,52 @@
+<%-include('templates/head')%> 
+
+<a class="volver" href="/">VOLVER</a> 
+
+<h1>ORDEN</h1>
+<h3>HEXANQUIFORMES</h3>
+
+
+
+<%if(arrayHexan.length>0){%>
+
+<%arrayHexan.forEach(hexan=>{%>
+
+<h1><%=hexan.nombre%></h1>
+<h2><%=hexan.cientifico%></h2>
+   
+<%if(hexan._id=='5fafb57877e622fa77bcb024'){%>
+    <h4>Derechos de atribución de fotografías</h4>
+    <h4>author-page-licence</h4>
+    <a href="https://commons.wikimedia.org/wiki/User:Citron">Citron</a> 
+    <a href="https://es.wikipedia.org/wiki/Chlamydoselachus_anguineus">Wikipedia</a>  
+    <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>
+    <%}%>  
+    
+    <%if(hexan._id=='5fafb63377e622fa77bcb025'){%>
+    <h4>Derechos de atribución de fotografías</h4>
+    <h4>author-page-licence</h4>
+    <a href="https://www.flickr.com/people/61815799@N00">José María Pérez Nuñez</a> 
+    <a href="https://es.wikipedia.org/wiki/Notorynchus_cepedianus#/media/Archivo:Notorynchus_cepedianus_2.jpg">Wikipedia</a>  
+    <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>
+    <%}%>  
+    
+    
+    
+    <%if(hexan._id=='5fafb6bc77e622fa77bcb026'){%>
+    <h4>Derechos de atribución de fotografías</h4>
+    <h4>author-page-licence</h4>
+    <a href="">Harbor Branch Oceanographic Institution </a> 
+    <a href="https://es.wikipedia.org/wiki/Hexanchus_griseus#/media/Archivo:Hexanchus_griseus.jpg">Wikipedia</a>  
+    <a href="https://creativecommons.org/licenses/by-sa/2.0/">Public Domain</a>
+    <%}%>  
+    
+<img src="<%=hexan.imagen%>" alt=""/>
+<p><h3><%=hexan.descripcion%></h3></p>
+
+<%})%>
+
+<%}%>
+<a class="volver" href="/">VOLVER</a> 
+
+
+<%- include('templates/footer') %>

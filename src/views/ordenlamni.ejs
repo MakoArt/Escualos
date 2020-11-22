@@ -1,0 +1,32 @@
+<%-include('templates/head')%> 
+
+<a class="volver" href="/">VOLVER</a> 
+
+<h1>ORDEN</h1>
+<h3>LAMNIFORMES</h3>
+
+
+
+<%if(arrayLamni.length>0){%>
+
+<%arrayLamni.forEach(lamni=>{%>
+
+<h1><%=lamni.nombre%></h1>
+<h2><%=lamni.cientifico%></h2>
+<%if(lamni._id=='5fafbd6877e622fa77bcb036'){%>
+    <h4>Derechos de atribución de fotografías</h4>
+    <h4>author-page-licence</h4>
+    <a href="https://commons.wikimedia.org/wiki/File:Goblin_Shark.gif">Wikimedia Commons</a> 
+    <a href="https://es.wikipedia.org/wiki/Mitsukurina_owstoni#/media/Archivo:Goblin_Shark.gif">Wikipedia</a>  
+    <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>
+    <%}%>  
+<img src="<%=lamni.imagen%>" alt=""/>
+<p><h3><%=lamni.descripcion%></h3></p>
+
+<%})%>
+
+<%}%>
+
+<a class="volver" href="/">VOLVER</a> 
+
+<%- include('templates/footer') %>

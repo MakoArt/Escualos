@@ -1,0 +1,72 @@
+<%-include('templates/head')%> 
+
+
+
+<a class="volver" href="/">VOLVER</a> 
+<h1>ORDEN</h1>
+<h3>CARCHARHINIFORMES</h3>
+
+
+
+<%if(arrayCarcha.length>0){%>
+
+<%arrayCarcha.forEach(carcha=>{%>
+
+<h1><%=carcha.nombre%></h1>
+<h2><%=carcha.cientifico%></h2>
+<%if(carcha._id=='5fafb91777e622fa77bcb028'){%>
+     <div class="license_container">
+    <h4>Derechos de atribución de fotografías</h4>
+     <h4>author-page-licence</h4>
+    <a href="https://foter.co/a5/5fdfb6">WIlly Volk</a> 
+    <a href="https://foter.com/re7/ecbc15">Foter.com</a>
+    <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY-NC-SA</a>
+    <%}%>
+    </div>
+    <%if(carcha._id=='5fafb96477e622fa77bcb029'){%>
+    <h4>Derechos de atribución de fotografías</h4>
+    <h4>author-page-licence</h4>
+     <a href="https://foter.co/a5/4ffee0">NLM - FOTOS</a> 
+     <a href="https://foter.com/re7/1bf984">Foter.com</a>  
+     <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY-NC-ND</a>
+    <%}%>    
+    
+    
+    <%if(carcha._id=='5fafb7db77e622fa77bcb027'){%>
+    <h4>Derechos de atribución de fotografías</h4>
+    <h4>author-page-licence</h4>
+    <a href="https://foter.co/a5/18a1e3">Brook-Ward</a> 
+    <a href="https://foter.com/re7/1bf984">Foter.com</a>  
+    <a href="http://creativecommons.org/licenses/by-nc/2.0/">CC BY-NC</a>
+    <%}%>  
+    
+    
+    <%if(carcha._id=='5fafbacd77e622fa77bcb02e'){%>
+    <h4>Derechos de atribución de fotografías</h4>
+    <h4>author-page-licence</h4>
+     <a href="https://www.flickr.com/people/29053754@N08">Bill Harrison</a>
+     <a href="https://commons.wikimedia.org/wiki/File:Speartooth_shark_melbourne.jpg">Wikimedia Commons</a>
+     <a href="">CC BY 2.0</a>
+    <%}%>
+<img src="<%=carcha.imagen%>" alt=""/>
+<p><h3><%=carcha.descripcion%></h3></p>
+
+
+<%})%>
+
+<%}%>
+
+<a class="volver" href="/">VOLVER</a> 
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include('templates/footer') %>

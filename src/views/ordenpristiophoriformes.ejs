@@ -1,0 +1,25 @@
+<%-include('templates/head')%> 
+
+<a class="volver" href="/">VOLVER</a> 
+
+<h1>ORDEN</h1>
+<h3>PRISTIOPHORIFORMES</h3>
+
+
+
+<%if(arrayPristio.length>0){%>
+
+<%arrayPristio.forEach(pristio=>{%>
+
+<h1><%=pristio.nombre%></h1>
+<h2><%=pristio.cientifico%></h2>
+<img src="<%=pristio.imagen%>" alt=""/>
+<p><h3><%=pristio.descripcion%></h3></p>
+
+<%})%>
+
+<%}%>
+
+<a class="volver" href="/">VOLVER</a> 
+
+<%- include('templates/footer') %>

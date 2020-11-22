@@ -1,0 +1,42 @@
+<%-include('templates/head')%> 
+
+<a class="volver" href="/">VOLVER</a> 
+
+<h1>ORDEN</h1>
+<h3>ORECTOLOBIFORMES</h3>
+
+
+
+<%if(arrayOrecto.length>0){%>
+
+<%arrayOrecto.forEach(orecto=>{%>
+
+<h1><%=orecto.nombre%></h1>
+<h2><%=orecto.cientifico%></h2>
+<%if(orecto._id=='5fafbdab77e622fa77bcb037'){%>
+    <h4>Derechos de atribución de fotografías</h4>
+    <h4>author-page-licence</h4>
+    <a href="https://commons.wikimedia.org/wiki/File:Spotted_wobbegong.jpg">Wikimedia Commons</a> 
+    <a href="https://es.wikipedia.org/wiki/Orectolobus_maculatus#/media/Archivo:Spotted_wobbegong.jpg">Wikipedia</a>  
+    <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>
+    <%}%>  
+    
+    
+    
+    <%if(orecto._id=='5fafbe0977e622fa77bcb038'){%>
+    <h4>Derechos de atribución de fotografías</h4>
+    <h4>author-page-licence</h4>
+    <a href="5fafbe0977e622fa77bcb038">Gary Rinaldi</a> 
+    <a href="https://es.wikipedia.org/wiki/Ginglymostoma_cirratum#/media/Archivo:Ginglymostoma_">Wikipedia</a>  
+    <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>
+    <%}%>  
+<img src="<%=orecto.imagen%>" alt=""/>
+<p><h3><%=orecto.descripcion%></h3></p>
+
+<%})%>
+
+<%}%>
+
+<a class="volver" href="/">VOLVER</a> 
+
+<%- include('templates/footer') %>
